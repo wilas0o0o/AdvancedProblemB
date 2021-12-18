@@ -5,13 +5,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @books = @user.books
     @book = Book.new
-    @today_books = @books.created_today
-    @yesterday_books = @books.created_yesterday
-    @two_days_ago_books = @books.created_2days_ago
-    @three_days_ago_books = @books.created_3days_ago
-    @four_days_ago_books = @books.created_4days_ago
-    @five_days_ago_books = @books.created_5days_ago
-    @six_days_ago_books = @books.created_6days_ago
   end
   
   def index
