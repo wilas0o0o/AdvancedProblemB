@@ -6,9 +6,9 @@ class UsersController < ApplicationController
     @books = @user.books
     @book = Book.new
     @today_books = @books.created_today
-    @yesterday_books= @books.created_yesterday
-    @week_books= @books.created_week
-    @lastweek_books= @books.created_lastweek
+    @yesterday_books = @books.created_yesterday
+    @week_books = @books.created_week
+    @lastweek_books = @books.created_lastweek
   end
 
   def index
