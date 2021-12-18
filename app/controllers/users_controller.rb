@@ -7,10 +7,13 @@ class UsersController < ApplicationController
     @book = Book.new
     @today_books = @books.created_today
     @yesterday_books = @books.created_yesterday
-    @week_books = @books.created_week
-    @lastweek_books = @books.created_lastweek
+    @two_days_ago_books = @books.created_2days_ago
+    @three_days_ago_books = @books.created_3days_ago
+    @four_days_ago_books = @books.created_4days_ago
+    @five_days_ago_books = @books.created_5days_ago
+    @six_days_ago_books = @books.created_6days_ago
   end
-
+  
   def index
     @users = User.all
     @book = Book.new
